@@ -31,7 +31,7 @@ python ./test_lambda.py -dc cifar10 -mc ResNet18 -bw 8 --mannual -ri 1 -ro 30
 ## Variables
 
 ### Task Specification
-
+```
 -bw: bit width (quantization config), 8 is provided in demo.
 
 -mc: model choice, ResNet18 is provided.
@@ -41,9 +41,9 @@ python ./test_lambda.py -dc cifar10 -mc ResNet18 -bw 8 --mannual -ri 1 -ro 30
 -tn: number of target instances, no effect in demo
 
 --rc: whether to randomly choose auxiliary samples
-
+```
 ### Hyperparameter Specification
-
+```
 --mannual: whether to mannually set hyperparameters (False means using default values defined in config.py)
 
 -bs_l: base lambda, set to 1 as default
@@ -53,6 +53,7 @@ python ./test_lambda.py -dc cifar10 -mc ResNet18 -bw 8 --mannual -ri 1 -ro 30
 -ro: outer ratio, lambda_out in paper
 
 -lr: learning rate for updating parameters
+```
 
 ## Results
 The log for attacking 8-bit quantized ResNet-18 is provided. Please refer to `log_resnet18_8.txt` for our results.
