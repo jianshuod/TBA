@@ -1,7 +1,24 @@
 # One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training 
 
-## Description
-This repository is the official implementation of our ICCV 2023 submission [One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training](). 
+This is the official implementation of our paper [One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training](), accepted by ICCV 2023. This research project is developed based on Python 3 and Pytorch, created by [Jianshuo Dong]().
+
+
+## Citation
+
+If you think this work or our codes are useful for your research, please cite our paper via:
+
+```bibtex
+@inproceedings{dong2023one,
+  title={One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training},
+  author={Jianshuo Dong, Qiu Han, Yiming Li, Tianwei Zhang, Yuanjie Li, Zeqi Lai, Chao Zhang, Shu-Tao Xia},
+  booktitle={ICCV},
+  year={2023}
+}
+```
+
+## The Main Pipeline of Our Methods
+
+![pipeline](./pipeline.png)
 
 ## Requirement Commands (Anaconda):
 
@@ -10,20 +27,20 @@ Based on pytorch 1.12
 Install by running the following cmd in the work directory 
 
 ```
-conda create --name tfa --file ./requirements.txt
+conda create --name tba --file ./requirements.txt
 ```
 
-## Procedures
+## Running Examples
 
 Step 1: [Download](https://www.dropbox.com/s/ax24afm1vqs9k8m/176_95.25.pth?dl=0) the model checkpoint, and then place it in the directory "checkpoint/resnet18"
 
-Step 2: Please first fill out the path to this work directory in your server
+Step 2: Fill out the path to this work directory in your server
 
-Step 3: configure the path to CIFAR-10 dataset in config.py
+Step 3: configure the path to CIFAR-10 dataset in ``config.py``
 
 Step 4: run the demo
 
-```
+```shell
 python ./test_lambda.py -dc cifar10 -mc ResNet18 -bw 8 --mannual -ri 1 -ro 30
 ```
 
@@ -57,3 +74,8 @@ python ./test_lambda.py -dc cifar10 -mc ResNet18 -bw 8 --mannual -ri 1 -ro 30
 
 ## Results
 The log for attacking 8-bit quantized ResNet-18 is provided. Please refer to `log_resnet18_8.txt` for our results.
+
+
+## License 
+
+This project is licensed under the terms of the Apache License 2.0. See the LICENSE file for the full text.
