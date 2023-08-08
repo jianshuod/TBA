@@ -10,7 +10,7 @@ If you think this work or our codes are useful for your research, please cite ou
 ```bibtex
 @inproceedings{dong2023one,
   title={One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training},
-  author={Jianshuo Dong, Qiu Han, Yiming Li, Tianwei Zhang, Yuanjie Li, Zeqi Lai, Chao Zhang, Shu-Tao Xia},
+  author={Dong, Jianshuo and Han, Qiu and Li, Yiming and Zhang, Tianwei and Li, Yuanjie and Lai, Zeqi and Zhang, Chao and Xia, Shu-Tao },
   booktitle={ICCV},
   year={2023}
 }
