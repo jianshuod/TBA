@@ -22,8 +22,6 @@ If you think this work or our codes are useful for your research, please cite ou
 
 ## Requirement Commands (Anaconda):
 
-Based on pytorch 1.12
-
 Install by running the following cmd in the work directory 
 
 ```
