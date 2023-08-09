@@ -1,6 +1,6 @@
 # One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training 
 
-This is the official implementation of our paper [One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training](), accepted by ICCV 2023. This research project is developed based on Python 3 and Pytorch, created by [Jianshuo Dong]().
+This is the official implementation of our paper [One-bit Flip is All You Need: When Bit-flip Attack Meets Model Training](), accepted by ICCV 2023. This research project is developed based on Python 3 and Pytorch.
 
 
 ## Citation
